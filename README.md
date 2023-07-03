@@ -1,23 +1,12 @@
 # 项目结构
 
-- **Demo**：各种算法的展示视频
-- **代码**：
-  - featureExtracting_http.py：用于提取pcap中的HTTP特征
-  - featureExtracting_tls.py：用于提取pcap中的TLS特征
-  - makeCSV_real.py：对流元特征进行加工处理
-  - featureMatching.py：用于将提取的HTTP和TLS特征匹配添加到原有特征之后并进行加工处理，生成完整特征文件数据集
-  - net.py：CNN所需模型
-  - CNN.py：CNN深度学习实现代码
-  - RF_Plot.py：随机森林实现代码
-  - XG_Plot.py：XGBoost实现代码
-  - SVM_Plot.py：SVM实现代码
-  - Stacking_Plot.py：Stacking集成学习实现代码
-- **数据集**：
-  - CICAndMal2017：原有的数据集
-    - all_pcaps：pcap文件
-    - csvs：pcap文件对应的csv特征文件
-    - csv_30000_10.csv：经过处理最终生成的CICAndMal数据集，可以直接作为机器学习的输入数据集
-  - 真实流量数据集：我们自行提取的真实流量数据
-    - pcap：提取出的真实流量包
-    - CSV：真实流量包经过CICFlowmeter处理后的流元特征数据
-    - csv_real：经过处理最终生成的真实流量数据集，可以直接作为机器学习的输入数据集
+- featureExtracting_http.py：用于提取pcap中的HTTP特征
+- featureExtracting_tls.py：用于提取pcap中的TLS特征
+- makeCSV_real.py：对流元特征进行加工处理
+- featureMatching.py：用于将提取的HTTP和TLS特征匹配添加到原有特征之后并进行加工处理，生成完整特征文件数据集
+- net.py：CNN所需模型
+- CNN.py：CNN深度学习实现代码
+- RF_Plot.py：随机森林实现代码
+- XG_Plot.py：XGBoost实现代码
+- SVM_Plot.py：SVM实现代码
+- Stacking_Plot.py：Stacking集成学习实现代码
